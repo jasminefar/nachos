@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bowl {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(to bottom, #d2691e 0%, #8b4513 100%);
+    border-radius: 200px 200px 0 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 5px solid #654321;
+}
+
+.nacho {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #f4a460;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    transform: rotate(var(--angle)) translateY(var(--translate));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#nacho1 {
+    --angle: 10deg;
+    --translate: -20px;
+    top: 50px;
+    left: 60px;
+}
+
+#nacho2 {
+    --angle: -20deg;
+    --translate: -10px;
+    top: 60px;
+    left: 160px;
+}
+
+#nacho3 {
+    --angle: 15deg;
+    --translate: 0px;
+    top: 70px;
+    left: 260px;
+}
+
+#nacho4 {
+    --angle: -5deg;
+    --translate: -30px;
+    top: 100px;
+    left: 100px;
+}
+
+#nacho5 {
+    --angle: 25deg;
+    --translate: 10px;
+    top: 120px;
+    left: 200px;
+}
+
+#nacho6 {
+    --angle: -15deg;
+    --translate: -20px;
+    top: 80px;
+    left: 180px;
+}
+
+#nacho7 {
+    --angle: 20deg;
+    --translate: -10px;
+    top: 130px;
+    left: 250px;
+}
+
+#nacho8 {
+    --angle: -10deg;
+    --translate: -25px;
+    top: 140px;
+    left: 80px;
+}
+
+#nacho9 {
+    --angle: 30deg;
+    --translate: 5px;
+    top: 90px;
+    left: 220px;
+}
+
+#nacho10 {
+    --angle: -25deg;
+    --translate: -15px;
+    top: 110px;
+    left: 140px;
+}
+
+.topping {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.cheese {
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(to bottom, #ffcc00, #e69500);
+    top: 50px;
+    left: 150px;
+    transform: rotate(-15deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.guacamole {
+    width: 80px;
+    height: 50px;
+    background: linear-gradient(to bottom, #7cfc00, #556b2f);
+    top: 90px;
+    left: 90px;
+    transform: rotate(15deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.salsa {
+    width: 80px;
+    height: 50px;
+    background: radial-gradient(circle, #ff6347, #8b0000);
+    top: 130px;
+    left: 180px;
+    transform: rotate(-10deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sour-cream {
+    width: 70px;
+    height: 40px;
+    background: radial-gradient(circle, #ffffff, #dcdcdc);
+    top: 110px;
+    left: 230px;
+    transform: rotate(20deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.jalapeno {
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #228b22, #006400);
+    top: 70px;
+    left: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.olives {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #000000, #2f4f4f);
+    top: 150px;
+    left: 70px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
